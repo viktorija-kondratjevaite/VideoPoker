@@ -51,6 +51,7 @@
     <Compile Include="VismaPoker\Interfaces\IPokerHandEvaluator.cs" />
     <Compile Include="VismaPoker\PokerGame.cs" />
     <Compile Include="VismaPoker\PokerHandEvaluator.cs" />
+    <Compile Include="VismaPoker\PokerMenu.cs" />
     <Compile Include="VismaPoker\Rank.cs" />
     <Compile Include="VismaPoker\Suit.cs" />
   </ItemGroup>
