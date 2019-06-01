@@ -10,7 +10,7 @@ namespace VismaPoker.VismaPoker
     public class PokerGame : IPokerGame
     {
         
-            private readonly List<Card> _hand = new List<Card>(); //only one
+            private readonly List<Card> _hand = new List<Card>();
             private readonly Array _ranks = Enum.GetValues(typeof(Rank));
             private readonly Array _suits = Enum.GetValues(typeof(Suit));
             private readonly Random _random = new Random();
@@ -57,7 +57,7 @@ namespace VismaPoker.VismaPoker
             public void EvaluateHand()
             {
                 var handEvaluation = _evaluator.EvaluateHand(_hand);
-                Console.WriteLine("Your hand is " + handEvaluation + " and it's value is - " + (int)handEvaluation + "\n");
+                Console.WriteLine("Your hand is " + handEvaluation + " and your prize is - " + (int)handEvaluation + "\n");
             }
 
             public void ClearHand()
