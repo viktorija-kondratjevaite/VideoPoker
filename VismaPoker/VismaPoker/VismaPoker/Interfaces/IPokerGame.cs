@@ -8,5 +8,11 @@ namespace VismaPoker.VismaPoker.Interfaces
 {
     public interface IPokerGame
     {
+        void GenerateHand();
+        Card GenerateCard();
+        void ReplaceCard(int cardNumber);
+        void PrintHand();
+        void EvaluateHand();
+        void ClearHand();
     }
 }

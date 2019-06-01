@@ -47,7 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VismaPoker\Card.cs" />
     <Compile Include="VismaPoker\Hand.cs" />
+    <Compile Include="VismaPoker\Interfaces\IPokerGame.cs" />
+    <Compile Include="VismaPoker\Interfaces\IPokerHandEvaluator.cs" />
     <Compile Include="VismaPoker\PokerGame.cs" />
+    <Compile Include="VismaPoker\PokerHandEvaluator.cs" />
     <Compile Include="VismaPoker\Rank.cs" />
     <Compile Include="VismaPoker\Suit.cs" />
   </ItemGroup>
