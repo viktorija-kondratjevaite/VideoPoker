@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace VismaPoker.VismaPoker
 {
-    class Suit
+    public enum Suit
     {
+        CLUBS,
+        DIAMONDS,
+        HEARTS,
+        SPADES
     }
 }

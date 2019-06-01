@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace VismaPoker.VismaPoker
 {
-    class Rank
+    public enum Rank
     {
+        ACE,
+        TWO,
+        THREE,
+        FOUR,
+        FIVE,
+        SIX,
+        SEVEN,
+        EIGHT,
+        NINE,
+        TEN,
+        JACK,
+        QUEEN,
+        KING
     }
 }
