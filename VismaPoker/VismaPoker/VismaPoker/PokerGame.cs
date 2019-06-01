@@ -36,7 +36,7 @@ namespace VismaPoker.VismaPoker
             {
                 if (_hand.Count == 0)
                 {
-                    Console.WriteLine("The hand is empty.");
+                    Console.WriteLine("The hand is empty.\n");
                     return;
                 }
 
@@ -50,14 +50,14 @@ namespace VismaPoker.VismaPoker
                 Console.WriteLine("Your hand:");
                 foreach (var card in _hand)
                 {
-                    Console.WriteLine(card.rank + " OF " + card.suit);
+                    Console.WriteLine(card.rank + " OF " + card.suit );
                 }
             }
 
             public void EvaluateHand()
             {
                 var handEvaluation = _evaluator.EvaluateHand(_hand);
-                Console.WriteLine("Your hand is " + handEvaluation + " and it's value is - " + (int)handEvaluation);
+                Console.WriteLine("Your hand is " + handEvaluation + " and it's value is - " + (int)handEvaluation + "\n");
             }
 
             public void ClearHand()

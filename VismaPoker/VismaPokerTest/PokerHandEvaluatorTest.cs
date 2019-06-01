@@ -5,6 +5,7 @@ using VismaPoker.VismaPoker;
 
 namespace VismaPokerTest
 {
+    // Hands taken from https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories
     [TestClass]
     public class PokerHandEvaluatorTest
     {
