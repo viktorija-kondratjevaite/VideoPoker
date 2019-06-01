@@ -24,17 +24,17 @@ namespace VismaPoker.VismaPoker
                     case "1":
                         pokerGame.GenerateHand();
                         Console.WriteLine("Hand Generated");
-                        pokerGame.PrintHand();
                         break;
                     case "2":
-                        Console.WriteLine("Which card do you want to replace? (0-4)");
+                        Console.WriteLine("Which card do you want to replace? (1-5)");
                         var cardNumber = Console.ReadLine();
-                        pokerGame.ReplaceCard(int.Parse(cardNumber));
+                        pokerGame.ReplaceCard(int.Parse(cardNumber)-1);
                         Console.WriteLine("Card number " + cardNumber + " was replaced");
                         pokerGame.PrintHand();
                         Console.WriteLine("Do you want to replace another card? (Y/N)");
                         break;
                     case "3":
+                        pokerGame.PrintHand();
                         pokerGame.EvaluateHand();
                         pokerGame.ClearHand();
                         break;

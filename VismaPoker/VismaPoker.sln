@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VismaPoker", "VismaPoker\VismaPoker.csproj", "{BE69DD38-0E94-47BC-9271-C0305747DAFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VismaPokerTest", "VismaPokerTest\VismaPokerTest.csproj", "{7FEC7949-C295-41CF-9125-608539E91A5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BE69DD38-0E94-47BC-9271-C0305747DAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE69DD38-0E94-47BC-9271-C0305747DAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE69DD38-0E94-47BC-9271-C0305747DAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEC7949-C295-41CF-9125-608539E91A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEC7949-C295-41CF-9125-608539E91A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEC7949-C295-41CF-9125-608539E91A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEC7949-C295-41CF-9125-608539E91A5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
