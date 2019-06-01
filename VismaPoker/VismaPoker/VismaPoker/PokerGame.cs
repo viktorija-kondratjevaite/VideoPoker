@@ -54,12 +54,17 @@ namespace VismaPoker.VismaPoker
                 }
             }
 
-
-            public void ClearHand()
+            public void EvaluateHand()
             {
-                _hand.Clear();
+                var handEvaluation = _evaluator.EvaluateHand(_hand);
+                Console.WriteLine("Your hand is " + handEvaluation + " and it's value is - " + (int)handEvaluation);
             }
 
-        }
+            public void ClearHand()
+                {
+                    _hand.Clear();
+                }
+
+            }
     
 }
