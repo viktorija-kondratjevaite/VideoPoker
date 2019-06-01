@@ -105,7 +105,7 @@ namespace VismaPoker.VismaPoker
         A straight is a hand that contains five cards of sequential rank, not all of the same suit.
         Difference between highest and lowest card should be 4.
         */
-        public bool IsStraight(List<Card> hand)//TODO: Investigate ACE
+        public bool IsStraight(List<Card> hand)
         {
             return hand.GroupBy(card => card.rank)
                        .Count() == hand.Count()
@@ -135,9 +135,14 @@ namespace VismaPoker.VismaPoker
         //Royal Flush is a hand consisting of the cards A, K, Q, J, 10, of the same suit.
         public bool IsRoyalFlush(List<Card> hand)
         {
-            return hand.Min(card => card.rank == Rank.JACK)
-                   && IsFlush(hand)
-                   && IsStraight(hand);
+            var ranks = hand.Select(card => card.rank).ToList();
+
+            return ranks.Contains(Rank.ACE)
+                && ranks.Contains(Rank.TEN)
+                && ranks.Contains(Rank.JACK)
+                && ranks.Contains(Rank.QUEEN)
+                && ranks.Contains(Rank.KING)
+                && IsFlush(hand);
         }
 
     }
